@@ -15,8 +15,8 @@ header {
 
 .logo {
     width: 2%;
-    padding-top: 20px;
-    padding-left: 40px;
+    padding-top: 10px;
+    padding-left: 20px;
     
 }
 
@@ -49,14 +49,14 @@ main {
     font-family: 'inter' sans-serif;
 }
 
-.caixa-de-texto::placeholder {
+.caixatexto::placeholder {
     color: #0A3871;
 }
 
 .alerta{
     position: absolute;
-    top: 750px;
-    left: 370px;
+    top: 709px;
+    left: 300px;
     display: flex;
     color: #495057;
 }
@@ -205,4 +205,51 @@ main {
 .rodape p {
     margin: 0;
     line-height: 1.5;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+    }
+
+    .esquerda, .direita {
+        width: 90%;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .conteudo-caixa-de-texto {
+        position: static;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .botoes {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .copiar {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .conteudo-resultado {
+        position: static;
+        padding: 20px;
+    }
+
+    .hominho, .paragrafo1 {
+        display: none;
+    }
 }

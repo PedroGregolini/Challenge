@@ -4,38 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="/imagens/logoAloura.png" alt="logoAlura">
+        <img class="logo" src="./imagens/logoAloura.png" alt="logoAlura">
     </header>
+
     <main>
         <section class="esquerda">
             <div class="conteudo-caixa-de-texto">
                 <textarea class="caixatexto" placeholder="Digite seu texto"></textarea>
             </div>
             <div class="alerta">
-                <img src="imagens/alerta.png" alt="alerta">
-                <p>Apenas letras minusculas e sem acento</p>
+                <img src="./imagens/alerta.png" alt="alerta">
+                <p>Apenas letras minúsculas e sem acento</p>
             </div>
             <div class="botoes">
-                <input type="button" class="btn-encriptar" value="encriptar">
-                <input type="button" class="btn-desencriptar" value="desencriptar">
+                <input type="button" class="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn-desencriptar" value="Desencriptar">
             </div>
         </section>
 
         <section class="direita">
             <div class="hominho">
-                <img src="/imagens/hominho.png" alt="hominho">
+                <img src="./imagens/hominho.png" alt="hominho">
             </div>
             <div class="paragrafo1">
                 <h3>Nenhuma mensagem foi <br> encontrada.</h3>
-                <p>Digite o Texto que deseja <br> descriptografar</p>
+                <p>Digite o texto que deseja <br> descriptografar.</p>
             </div>
             <div class="copiar">
                 <input type="button" class="btn-copiar" value="Copiar">
@@ -43,10 +42,10 @@
             <div class="conteudo-resultado">
                 <p class="texto-resultado"></p>
             </div>
-
         </section>
     </main>
-    <script src="/script.js"></script>
+
+    <script src="script.js"></script>
 
     <footer class="rodape">
         <p>Challenge ONE Decodificador de texto - Turma T7</p>
